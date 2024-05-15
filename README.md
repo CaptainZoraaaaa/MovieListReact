@@ -11,6 +11,8 @@ Currently, two official plugins are available:
 
 - To start the app Node.js and PNPM is needed 
 
+- To install pnpm you can can use for example npm which can be found at: https://www.npmjs.com/ (tips npm comes with Node.js)  
+
 - To install pnpm you can use the following command: npm install -g pnpm
 
 - After PNPM is installed move to the root folder and run: pnpm install Or Pnpm i
