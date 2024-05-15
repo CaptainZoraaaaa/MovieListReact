@@ -1,8 +1,9 @@
 import { useState} from 'react'
 import empty from './assets/starE.png'
 import filled from './assets/Star_full.png'
-// Importing components from component Library
+// Importing components from component Library chakra-Ui can be found at: https://v2.chakra-ui.com/
 import { Button, Card, Flex, HStack, VStack, Img, Input, Stack, useToast, Heading, Divider } from '@chakra-ui/react'
+//moviecard component created to display the added movies
 import MovieCard from './Components/MovieCard'
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
     setStarsValue(imgIndex + 1);
     setStarsImg(tempArray);
   }
-  //controlls so the name and rating have been succefully given and if yes add a new movie otherwise send an error message
+  // controls so the name and rating have been succefully 
+  // given and if yes add a new movie otherwise send an error message
   const addMovie = () => {
     if (!nameValue) {
       setValidName(true);
@@ -87,6 +89,9 @@ function App() {
     setMovieCards(tempArray);
   }
 
+  // Website strcuture All components are returned in a card surounding everything
+  // Hstack used to align stars horizontally 
+  // VStack Used to display all movieCards vertcally 
   return (
     <Card height={'97svh'} bgColor={'#5EAD90'} padding={'3%'} overflowY={'scroll'}>
       <Stack spacing={'8px'} width={'100%'} alignItems={'center'}>
@@ -114,5 +119,5 @@ function App() {
     </Card>
   )
 }
-
+// exports the website with its function as a whole package
 export default App
